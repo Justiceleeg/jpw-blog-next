@@ -149,7 +149,7 @@ export default function Personal() {
                 <Image
                   src={project.image}
                   alt={`${project.name} image`}
-                  className="rounded-2xl object-cover"
+                  className="h-48 w-full rounded-2xl object-cover"
                 />
               </div>
               <div className="px-1">
