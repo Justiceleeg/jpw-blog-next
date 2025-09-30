@@ -1,111 +1,58 @@
 export const metadata = {
-  title: 'Exploring the Intersection of Design, AI, and Design Engineering',
+  title: 'A New Portfolio Post',
   description:
-    'Design and artificial intelligence (AI) are increasingly intertwined, driving innovation across industries. As technology evolves, the role of design engineering is more critical than ever, bridging creativity and functionality.',
+    'Why I rebuilt my portfolio with Next.js and Tailwind CSS',
   alternates: {
     canonical:
-      '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+      '/blog/a-new-portfolio-post',
   },
 }
 
 <Cover
-  src="https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg"
-  alt="Image from the movie Alien - from cosmos.com"
-  caption="cosmos.com"
+  src="/images/old-portfolio-cover.png"
+  alt="A screenshot of my old portfolio website"
+  caption="My old portfolio website"
 />
 
-# Exploring the Intersection of Design, AI, and Design Engineering
+# A New Portfolio Post
 
-Design and artificial intelligence (AI) are increasingly intertwined, driving innovation across industries. As technology evolves, the role of design engineering is more critical than ever, bridging creativity and functionality.
-
----
-
-## The Evolving Role of AI in Design
-
-AI is no longer just a backend tool—it’s becoming an active collaborator in the creative process. From generating design ideas to optimizing layouts, AI offers endless possibilities. For instance:
-
-- **Generative Design**: AI algorithms can generate thousands of design variations based on constraints, helping designers explore ideas faster.
-- **User Experience Optimization**: AI analyzes user behavior to suggest improvements, enabling data-driven design decisions.
-- **Automation**: Repetitive tasks like resizing assets or formatting layouts can be automated, freeing up designers for more strategic work.
-
-## Challenges and Opportunities
-
-While AI empowers designers, it also raises challenges:
-
-### Challenges
-
-- **Ethical Design**: AI systems may unintentionally reinforce biases. Designers must ensure inclusivity and fairness.
-- **Loss of Control**: Relying too heavily on AI can dilute the human touch in design.
-- **Learning Curve**: Integrating AI tools requires new skills, which can be daunting for some designers.
-
-### Opportunities
-
-- **Enhanced Creativity**: AI can inspire by offering unconventional ideas.
-- **Efficiency Gains**: Automation allows for rapid iteration and prototyping.
-- **Scalability**: AI enables personalized experiences at scale, a growing demand in today’s market.
+Recently, I decided to rebuild my portfolio website using Next.js and Tailwind CSS. In this post, I'll compare the technologies I used in my old portfolio with those in my new one, and explain why I made the switch.
 
 ---
 
-## Design Engineering: The Glue Between Creativity and Execution
+## My Old Portfolio
 
-Design engineering ensures that the gap between creative vision and technical execution is seamless. It combines the artistry of design with the precision of engineering.
+I built my old portfolio using:
 
-### Key Principles of Design Engineering
+* [**Deno**](https://deno.com): A modern TypeScript first runtime that uses V8 and is built in Rust.
+* [**Lume**](https://lume.land): Deno's version of Gatsby. A static site generator that makes it easy to build fast, modern websites.
+* [**Tailwind CSS**](https://tailwindcss.com): A utility-first CSS framework for rapidly building custom user interfaces.
+* [**DaisyUI**](https://daisyui.com): A Tailwind CSS component library that adds a set of pre-designed components to Tailwind CSS.
 
-1. **Systems Thinking**: Viewing a design holistically ensures all components work together cohesively.
-2. **Collaboration**: Effective communication between designers and developers is crucial for successful outcomes.
-3. **Iterative Process**: Building, testing, and refining are fundamental to achieving the best results.
+I started working on this website last year at a time when I was fed up with npm bloat and the ballooning complexity of modern frameworks. Deno simplifies package management and requires no node_modules folder, which was a breath of fresh air. At this time, Next.js had just introduced their app directory pattern and the adoption of React Server Components was mixed. There had to be an easier way.
 
-> "Good design is as little design as possible." — Dieter Rams
+### From Complexity to Simplicity and Back
 
-### Tools of the Trade
+Deno and Lume offered a simpler, more streamlined development experience (DX). 
+But this came with a price. The Deno ecosystem was nascent (it still is).
+While Deno doesn't require the use of node_modules, use of node_modules is still unavoidable.
+Many packages I wanted to use were not yet on the [Javascript Registry (JSR)](https://jsr.io) so I needed to import them from npm anyway.
 
-Modern design engineers leverage tools like:
+Lume also had its limitations. All of the user interactions and animations were done with vanilla JavaScript. 
+While this was a good exercise in the basics, it hindered the DX.
 
-- **Figma** and **Sketch** for prototyping
-- **Motion** for creating smooth animations
-- **Tailwind CSS** for streamlined styling
-- **Git** for version control and collaboration
+## My New Portfolio
 
----
+I rebuilt my portfolio using:
+* [**Next.js**](https://nextjs.org): <em>The</em> React fullstack framework.
+* [**Tailwind CSS**](https://tailwindcss.com): A utility-first CSS framework for rapidly building custom user interfaces.
+* [**Framer Motion**](https://www.framer.com/motion/): A production-ready motion library for React.
 
-## AI and Design Engineering: A Symbiotic Relationship
+### Why Next.js
+Next.js has become the de facto standard for building React applications. 
+With v15 the API and documentation have become more stable and mature. 
+The DX is excellent and deployment is a breeze. Server components make it easy to determine what code runs on the server and what runs on the client.
 
-The integration of AI into design engineering creates powerful synergies:
+## In Conclusion
 
-- **Prototyping with AI**: AI-driven tools like ChatGPT assist in generating content for prototypes, accelerating the design process.
-- **Predictive Analytics**: Engineers use AI to predict performance issues and optimize designs in real-time.
-- **Accessibility Improvements**: AI tools automatically detect and fix accessibility concerns, ensuring compliance.
-
-### Case Study: Motion-Primitives
-
-Motion-Primitives demonstrates how AI and design engineering come together. By leveraging Framer Motion and Tailwind CSS, it simplifies the creation of dynamic, responsive interfaces. AI can enhance this by:
-
-- Generating motion patterns based on user preferences.
-- Optimizing performance for different devices.
-- Automating testing for cross-browser compatibility.
-
----
-
-## Conclusion
-
-The intersection of AI, design, and design engineering is reshaping the industry. By embracing AI while staying grounded in design principles, professionals can push boundaries and create experiences that are both innovative and human-centered. The future lies in collaboration—not only between humans and machines but also among designers, engineers, and AI.
-
----
-
-### Questions for Reflection
-
-- How can we ensure AI remains a tool for empowerment rather than replacement?
-- What steps can design engineers take to integrate AI responsibly into their workflows?
-
-### Further Reading
-
-- [Designing for AI](https://example.com/designing-for-ai)
-- [The Future of Design Systems](https://example.com/future-design-systems)
-- [Ethical AI Guidelines](https://example.com/ethical-ai)
-
----
-
-### Music for Inspiration
-
-Listening to music while working? Check out _"Motion"_ by Tycho—a perfect blend of creativity and rhythm.
+Portfolio websites are a great way to experiment with web development technologies. My last portfolio was a great learning experience in a more basic web stack. My current one is bleeding-edge tech but perhaps more bloated than necessary. I'm in a different headspace when it comes to technology choices. Now I prioritize DX and productivity. The end result is the most important thing.

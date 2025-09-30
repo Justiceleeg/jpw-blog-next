@@ -1,111 +1,62 @@
 export const metadata = {
   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
   description:
-    'Design and artificial intelligence (AI) are increasingly intertwined, driving innovation across industries. As technology evolves, the role of design engineering is more critical than ever, bridging creativity and functionality.',
+    'The impetus and thoughts surrounding Zineplace, a platform to share and discover zines.',
   alternates: {
     canonical:
-      '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+      '/blog/devlog-1-zineplace',
   },
 }
 
 <Cover
-  src="https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg"
-  alt="Image from the movie Alien - from cosmos.com"
-  caption="cosmos.com"
+  src="/images/zine-fest.png"
+  alt="Flyer for the Lone Star Zine Fest, Austin TX"
+  caption="The Lone Star Zine Fest, Austin TX"
 />
 
-# Exploring the Intersection of Design, AI, and Design Engineering
+# Devlog 1: Zineplace
 
-Design and artificial intelligence (AI) are increasingly intertwined, driving innovation across industries. As technology evolves, the role of design engineering is more critical than ever, bridging creativity and functionality.
-
----
-
-## The Evolving Role of AI in Design
-
-AI is no longer just a backend tool—it’s becoming an active collaborator in the creative process. From generating design ideas to optimizing layouts, AI offers endless possibilities. For instance:
-
-- **Generative Design**: AI algorithms can generate thousands of design variations based on constraints, helping designers explore ideas faster.
-- **User Experience Optimization**: AI analyzes user behavior to suggest improvements, enabling data-driven design decisions.
-- **Automation**: Repetitive tasks like resizing assets or formatting layouts can be automated, freeing up designers for more strategic work.
-
-## Challenges and Opportunities
-
-While AI empowers designers, it also raises challenges:
-
-### Challenges
-
-- **Ethical Design**: AI systems may unintentionally reinforce biases. Designers must ensure inclusivity and fairness.
-- **Loss of Control**: Relying too heavily on AI can dilute the human touch in design.
-- **Learning Curve**: Integrating AI tools requires new skills, which can be daunting for some designers.
-
-### Opportunities
-
-- **Enhanced Creativity**: AI can inspire by offering unconventional ideas.
-- **Efficiency Gains**: Automation allows for rapid iteration and prototyping.
-- **Scalability**: AI enables personalized experiences at scale, a growing demand in today’s market.
+In this series of posts, I will document the process of designing and building Zineplace, a platform to share and discover zines. 
+In this particular post, I will cover my reasons why and what design decisions I'm making/planning to make.
 
 ---
 
-## Design Engineering: The Glue Between Creativity and Execution
+## What are Zines?
 
-Design engineering ensures that the gap between creative vision and technical execution is seamless. It combines the artistry of design with the precision of engineering.
+Zines are indie magazines. They are typically self-published, small-circulation, and non-commercial.
+They can be about any topic or no topic at all. They're a form of self-expression and a way to share ideas and art. 
 
-### Key Principles of Design Engineering
+### AI and Technofeudalism
 
-1. **Systems Thinking**: Viewing a design holistically ensures all components work together cohesively.
-2. **Collaboration**: Effective communication between designers and developers is crucial for successful outcomes.
-3. **Iterative Process**: Building, testing, and refining are fundamental to achieving the best results.
+AI is rapidly changing the landscape of creativity and content creation.
+There are many who would delegate creativity to AI and find it's work comparable.
+They are incorrect. Creativity is a human endeavor.
 
-> "Good design is as little design as possible." — Dieter Rams
+Technofeudalism is the idea that technology companies are becoming the new feudal lords.
+They control the means of production and the distribution of content.
+They are the gatekeepers of the internet and the arbiters of what is seen and what isn't.
 
-### Tools of the Trade
+Zines and this site are my attempt to push back against this trend. Zines will be the content and expression of the platform. A means by which people come together and share ideas.
+The platform itself will employ many ideas taken from the early web - a time when the web was less commodity and more community.
 
-Modern design engineers leverage tools like:
+## A Return to the Early Web
 
-- **Figma** and **Sketch** for prototyping
-- **Motion** for creating smooth animations
-- **Tailwind CSS** for streamlined styling
-- **Git** for version control and collaboration
+Before the search engine there were web rings. These were ways for site owners to link to other like-minded sites.
+They were a form of community building and discovery. An early form of social networking and content curation. Zineplace will employ a similar concept. By interacting with the site, you create a network of links to other zines. You become a part of the community and a curator for those with similar interests as you.
 
----
+## The Tech
 
-## AI and Design Engineering: A Symbiotic Relationship
+I will be using the following technologies to build Zineplace:
+* [**Next.js**](https://nextjs.org): The React fullstack framework.
+* [**Vercel**](https://vercel.com): To host the site.
+* [**Tailwind CSS**](https://tailwindcss.com): A utility-first CSS framework for rapidly building custom user interfaces.
+* [**Neon**](https://neon.tech): A serverless Postgres database.
+* [**Drizzle ORM**](https://orm.drizzle.team): A type-safe ORM for SQL databases.
+* [**Cloudflare R2**](https://r2.cloudflarestorage.com): For storing zine files and images. Free egress!
+* [**Better Auth**](https://betterauth.com): For self-owned authentication and user management.
 
-The integration of AI into design engineering creates powerful synergies:
+## Lastly, A Funny Story
 
-- **Prototyping with AI**: AI-driven tools like ChatGPT assist in generating content for prototypes, accelerating the design process.
-- **Predictive Analytics**: Engineers use AI to predict performance issues and optimize designs in real-time.
-- **Accessibility Improvements**: AI tools automatically detect and fix accessibility concerns, ensuring compliance.
+![A screenshot of purchasing sparesquace from squarespace](/images/sparesquace.png)
 
-### Case Study: Motion-Primitives
-
-Motion-Primitives demonstrates how AI and design engineering come together. By leveraging Framer Motion and Tailwind CSS, it simplifies the creation of dynamic, responsive interfaces. AI can enhance this by:
-
-- Generating motion patterns based on user preferences.
-- Optimizing performance for different devices.
-- Automating testing for cross-browser compatibility.
-
----
-
-## Conclusion
-
-The intersection of AI, design, and design engineering is reshaping the industry. By embracing AI while staying grounded in design principles, professionals can push boundaries and create experiences that are both innovative and human-centered. The future lies in collaboration—not only between humans and machines but also among designers, engineers, and AI.
-
----
-
-### Questions for Reflection
-
-- How can we ensure AI remains a tool for empowerment rather than replacement?
-- What steps can design engineers take to integrate AI responsibly into their workflows?
-
-### Further Reading
-
-- [Designing for AI](https://example.com/designing-for-ai)
-- [The Future of Design Systems](https://example.com/future-design-systems)
-- [Ethical AI Guidelines](https://example.com/ethical-ai)
-
----
-
-### Music for Inspiration
-
-Listening to music while working? Check out _"Motion"_ by Tycho—a perfect blend of creativity and rhythm.
+The original name for this project was "Sparesquace". I bought the domain from Squarespace - thinking this would serve as protection from any litigation. It was a dig at them and to express my anti corporate sentiments. But it turns out that this is a form of "typosquatting" and can be seen by some as malicious... So I changed the name!

@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image'
 import paintsweeperImg from '../public/images/paintsweeper.png'
+import zineplaceImg from '../public/images/early-zineplace.png'
 
 type Project = {
   name: string
@@ -35,7 +36,7 @@ export const PROJECTS: Project[] = [
     name: 'Zineplace',
     description: 'A zine platform to share and discover indie ideas and art.',
     link: 'https://www.zineplace.com/',
-    image: paintsweeperImg,
+    image: zineplaceImg,
     id: 'project1',
   },
   {
@@ -125,7 +126,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Devlog 1: Zineplace',
     description:
-      'The impotus and thoughts surrounding Zineplace, a platform to share and discover indie zines.',
+      'The impetus and thoughts surrounding Zineplace, a platform to share and discover zines.',
     link: '/blog/devlog-1-zineplace',
     uid: 'blog-2',
   },
