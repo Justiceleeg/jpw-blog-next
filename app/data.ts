@@ -67,14 +67,6 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     id: 'work2',
   },
   {
-    company: 'Army Futures Command',
-    title: 'Software Engineer',
-    start: 'Aug 2023',
-    end: 'Oct 2023',
-    link: 'https://www.army.mil/futures',
-    id: 'work3',
-  },
-  {
     company: 'Tomorrow Health',
     title: 'Software Engineer',
     start: 'Oct 2021',
